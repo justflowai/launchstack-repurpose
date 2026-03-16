@@ -222,6 +222,22 @@ export function LiveDemo() {
               </button>
             </div>
 
+            {/* Telegram capture CTA */}
+            <div className="bg-gradient-to-r from-blue-500/10 to-brand-teal/10 border border-blue-500/30 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div>
+                <p className="text-white font-semibold text-sm">Want daily content tips + early access to new features?</p>
+                <p className="text-brand-gray text-xs">Join our free Telegram community — no spam, just value.</p>
+              </div>
+              <a
+                href="https://t.me/launchstackrepurpose"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 px-5 py-2 rounded-lg bg-blue-500 text-white font-semibold text-sm hover:bg-blue-400 transition-colors"
+              >
+                Join Telegram
+              </a>
+            </div>
+
             {Object.entries(results).map(([platformId, output]) => {
               const platform = PLATFORM_LIST.find((p) => p.id === platformId)
               if (!platform) return null
