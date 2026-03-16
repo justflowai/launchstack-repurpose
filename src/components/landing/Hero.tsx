@@ -10,11 +10,11 @@ export function Hero() {
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-teal/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto text-center">
-        {/* Badge — social proof */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-slate border border-white/10 text-sm text-brand-gray mb-8">
-          <Sparkles className="w-4 h-4 text-brand-teal" />
-          <span>
-            Trusted by 500+ creators
+        {/* Badge — founding urgency (no fake social proof) */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-amber/10 border border-brand-amber/30 text-sm text-brand-amber mb-8">
+          <Sparkles className="w-4 h-4 text-brand-amber" />
+          <span className="font-semibold">
+            Founding member spots open — 50% off forever
           </span>
         </div>
 
@@ -51,7 +51,7 @@ export function Hero() {
 
         {/* Trust line */}
         <p className="mt-6 text-sm text-brand-gray/60">
-          No credit card required. 5 free repurposes per day.
+          No credit card required. 3 free repurposes per day.
         </p>
 
         {/* Platform logos row */}
@@ -65,6 +65,7 @@ export function Hero() {
             <span>X</span>
             <span>Instagram</span>
             <span>Facebook</span>
+            <span>Email</span>
           </div>
         </div>
       </div>
