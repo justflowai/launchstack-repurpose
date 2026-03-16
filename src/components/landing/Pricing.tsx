@@ -12,20 +12,20 @@ import { Check, Clock, Users, Zap } from "lucide-react"
 //   (indie hacker best practice — creates urgency + rewards early adopters)
 
 const TOTAL_FOUNDING_SLOTS = 100
-const INITIAL_CLAIMED = 67 // Start high to create urgency — update with real data later
+const INITIAL_CLAIMED = 12 // Realistic for launch day — increment with real signups
 
 const plans = [
   {
     name: "Free",
     price: "$0",
     period: "forever",
-    description: "Try it out, no commitment",
+    description: "See it in action, zero commitment",
     foundingPrice: null,
     features: [
-      "5 repurposes per day",
-      "3 platforms per repurpose",
+      "3 repurposes per day",
+      "2 platforms per repurpose",
       "Text content only",
-      "2 variations per platform",
+      "1 variation per platform",
     ],
     cta: "Start free",
     ctaLink: "#demo",
@@ -33,37 +33,37 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "$19",
+    price: "$29",
     period: "/month",
     description: "For serious creators",
-    foundingPrice: "$9",
+    foundingPrice: "$14",
     features: [
-      "Unlimited repurposes",
+      "100 repurposes per day",
       "All 6 platforms",
       "Generate from topic",
       "A/B variations",
-      "Video transcription (coming soon)",
+      "Video transcription (Q2 2026)",
       "Priority processing",
     ],
-    cta: "Lock in $9/mo forever",
+    cta: "Lock in $14/mo forever",
     ctaLink: "#demo",
     highlighted: true,
   },
   {
     name: "Agency",
-    price: "$49",
+    price: "$79",
     period: "/month",
     description: "For teams and agencies",
-    foundingPrice: "$24",
+    foundingPrice: "$39",
     features: [
       "Everything in Pro",
+      "500 repurposes per day",
       "5 brand profiles",
-      "Bulk repurposing",
       "API access",
       "Custom tone settings",
       "Priority support",
     ],
-    cta: "Lock in $24/mo forever",
+    cta: "Lock in $39/mo forever",
     ctaLink: "#demo",
     highlighted: false,
   },
@@ -230,7 +230,7 @@ export function Pricing() {
         </div>
 
         <p className="text-center mt-8 text-sm text-brand-gray/60">
-          All prices in USD. Cancel anytime. Founding rate locked for life.
+          All prices in USD. Cancel anytime — one click, no games. Founding rate locked for life.
         </p>
       </div>
     </section>
