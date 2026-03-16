@@ -6,19 +6,27 @@ import { ChevronDown } from "lucide-react"
 const faqs = [
   {
     q: "How is this different from Repurpose.io?",
-    a: "Repurpose.io pipes content between platforms — it's essentially automation without intelligence. LaunchStack uses AI to actually transform your content for each platform's native format, tone, and audience. We also generate content from scratch — something Repurpose.io can't do at all.",
+    a: "Repurpose.io pipes content between platforms — it's automation without intelligence. LaunchStack uses AI to actually transform your content for each platform's native format, tone, and audience. We also generate content from scratch — something Repurpose.io can't do. And unlike Repurpose.io, there are no workflows that break or connections that randomly disconnect.",
+  },
+  {
+    q: "Will this get my social media accounts banned?",
+    a: "No. Unlike tools that auto-post via third-party APIs (which platforms flag as 'automatic behavior'), LaunchStack generates platform-native copy that you post yourself. You keep full control of your accounts. Zero risk of suspension.",
   },
   {
     q: "Does it actually sound human?",
-    a: "Yes. Each platform has custom tone and format rules built into the AI. A LinkedIn post reads like a professional insight, a TikTok caption reads like a creator sharing a tip. No robotic \"As an AI\" language.",
+    a: "Yes. Each platform has custom tone and format rules built into the AI. A LinkedIn post reads like a professional insight, a TikTok caption reads like a creator sharing a tip. No robotic rewrites — real platform-native transformation.",
   },
   {
-    q: "What kind of content can I repurpose?",
-    a: "Anything text-based: blog posts, newsletter editions, YouTube transcripts, podcast transcripts, long tweets, product descriptions, press releases. Video transcription is coming soon.",
+    q: "Can I actually cancel, or will you make it difficult?",
+    a: "One click. No calls, no guilt trips, no 3 rounds of support chat. Cancel from your dashboard instantly. We don't retain your payment info after cancellation. We build a tool people want to keep — not one they're trapped in.",
   },
   {
     q: "Can I try it before paying?",
-    a: "Absolutely. The free tier gives you 5 repurposes per day with 3 platforms — no credit card, no signup required to try the demo on this page.",
+    a: "Absolutely. The free tier gives you 3 repurposes per day with 2 platforms — no credit card, no signup required. Try the live demo right on this page.",
+  },
+  {
+    q: "What kind of content can I repurpose?",
+    a: "Anything text-based: blog posts, newsletter editions, YouTube transcripts, podcast transcripts, long tweets, product descriptions, press releases. Video transcription is coming Q2 2026.",
   },
   {
     q: "What platforms do you support?",
@@ -26,7 +34,7 @@ const faqs = [
   },
   {
     q: "Can I use this for clients?",
-    a: "Yes. The Agency plan ($49/mo) lets you manage 5 brand profiles with custom tone settings — perfect for freelancers and agencies managing multiple clients.",
+    a: "Yes. The Agency plan ($79/mo, or $39/mo for founding members) lets you manage 5 brand profiles with custom tone settings — perfect for freelancers and agencies managing multiple clients.",
   },
 ]
 
