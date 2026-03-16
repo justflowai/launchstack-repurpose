@@ -35,7 +35,7 @@ const rows = [
     opus: false,
   },
   {
-    feature: "Video clip detection (coming soon)",
+    feature: "Video clip detection (Q2 2026)",
     us: "soon",
     repurpose: false,
     opus: true,
@@ -48,6 +48,18 @@ const rows = [
   },
   {
     feature: "No workflow failures or reconnection issues",
+    us: true,
+    repurpose: false,
+    opus: false,
+  },
+  {
+    feature: "Zero risk of account bans",
+    us: true,
+    repurpose: false,
+    opus: false,
+  },
+  {
+    feature: "Cancel anytime, one click",
     us: true,
     repurpose: false,
     opus: true,
@@ -76,11 +88,11 @@ export function Comparison() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
-            How we compare
+            Why creators are switching
           </h2>
           <p className="mt-3 text-brand-gray">
-            Built to fix the problems creators actually have with existing
-            tools.
+            Built to fix the problems creators actually have — broken workflows,
+            account bans, and dumb automation that doesn&apos;t transform anything.
           </p>
         </div>
 
