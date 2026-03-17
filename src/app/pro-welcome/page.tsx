@@ -43,10 +43,10 @@ export default function ProWelcome() {
       <div className="max-w-lg w-full">
         {!activated ? (
           <div className="bg-brand-slate border border-brand-teal/30 rounded-2xl p-8 text-center">
-            <div className="w-16 h-16 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-12 sm:w-16 h-12 sm:h-16 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Crown className="w-8 h-8 text-brand-teal" />
             </div>
-            <h1 className="text-3xl font-bold text-white mb-3">
+            <h1 className="text-2xl sm:text-3xl font-bold text-white mb-3">
               Welcome, founding member!
             </h1>
             <p className="text-brand-gray mb-8">
@@ -103,10 +103,10 @@ export default function ProWelcome() {
           </div>
         ) : (
           <div className="bg-brand-slate border border-brand-teal/30 rounded-2xl p-8 text-center">
-            <div className="w-16 h-16 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="w-12 sm:w-16 h-12 sm:h-16 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <Check className="w-8 h-8 text-brand-teal" />
             </div>
-            <h1 className="text-3xl font-bold text-white mb-3">
+            <h1 className="text-2xl sm:text-3xl font-bold text-white mb-3">
               You&apos;re all set!
             </h1>
             <p className="text-brand-gray mb-8">
