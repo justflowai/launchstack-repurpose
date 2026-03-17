@@ -7,7 +7,7 @@ import { getProStatus, getPlanLabel, getPlanType } from "@/lib/pro"
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isPro, setIsPro] = useState(false)
-  const [planLabel, setPlanLabel] = useState("")
+  const [planLabel, setPlanLabel] = useState("")h
 
   useEffect(() => {
     const pro = getProStatus()
@@ -25,7 +25,7 @@ export function Navbar() {
               <Zap className="w-4 h-4 text-white" />
             </div>
             <span className="font-bold text-lg text-white">
-              LaunchStack
+              LaunchStack AI
             </span>
             {isPro && (
               <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-brand-teal/20 text-brand-teal border border-brand-teal/30">
