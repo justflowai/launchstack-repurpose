@@ -1,0 +1,35 @@
+# LaunchStack Repurpose — AI Content Repurposing Engine
+# https://launchstack-repurpose.vercel.app
+
+User-agent: *
+Allow: /
+
+# Explicitly allow AI search engine crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://launchstack-repurpose.vercel.app/sitemap.xml
