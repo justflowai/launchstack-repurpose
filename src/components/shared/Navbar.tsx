@@ -1,10 +1,19 @@
 "use client"
 
-import { useState } from "react"
-import { Menu, X, Zap } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Menu, X, Zap, Crown } from "lucide-react"
+import { getProStatus, getPlanLabel, getPlanType } from "@/lib/pro"
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [isPro, setIsPro] = useState(false)
+  const [planLabel, setPlanLabel] = useState("")
+
+  useEffect(() => {
+    const pro = getProStatus()
+    setIsPro(pro)
+    if (pro) setPlanLabel(getPlanLabel(getPlanType()))
+  }, [])
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-dark/80 backdrop-blur-xl border-b border-white/5">
@@ -18,34 +27,49 @@ export function Navbar() {
             <span className="font-bold text-lg text-white">
               LaunchStack
             </span>
+            {isPro && (
+              <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-brand-teal/20 text-brand-teal border border-brand-teal/30">
+                <Crown className="w-2.5 h-2.5" />
+                {planLabel}
+              </span>
+            )}
           </a>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="#demo"
+              href="/#demo"
               className="text-sm text-brand-gray hover:text-white transition-colors"
             >
               Try it
             </a>
             <a
-              href="#features"
+              href="/#features"
               className="text-sm text-brand-gray hover:text-white transition-colors"
             >
               Features
             </a>
             <a
-              href="#pricing"
+              href="/#pricing"
               className="text-sm text-brand-gray hover:text-white transition-colors"
             >
               Pricing
             </a>
-            <a
-              href="#demo"
-              className="px-4 py-2 rounded-lg bg-brand-teal text-brand-dark font-semibold text-sm hover:bg-brand-teal/90 transition-colors"
-            >
-              Try free
-            </a>
+            {isPro ? (
+              <a
+                href="/dashboard"
+                className="px-4 py-2 rounded-lg bg-brand-teal text-brand-dark font-semibold text-sm hover:bg-brand-teal/90 transition-colors"
+              >
+                Dashboard
+              </a>
+            ) : (
+              <a
+                href="/#demo"
+                className="px-4 py-2 rounded-lg bg-brand-teal text-brand-dark font-semibold text-sm hover:bg-brand-teal/90 transition-colors"
+              >
+                Try free
+              </a>
+            )}
           </div>
 
           {/* Mobile toggle */}
@@ -65,33 +89,43 @@ export function Navbar() {
         {mobileOpen && (
           <div className="md:hidden pb-4 space-y-3">
             <a
-              href="#demo"
+              href="/#demo"
               className="block text-sm text-brand-gray hover:text-white"
               onClick={() => setMobileOpen(false)}
             >
               Try it
             </a>
             <a
-              href="#features"
+              href="/#features"
               className="block text-sm text-brand-gray hover:text-white"
               onClick={() => setMobileOpen(false)}
             >
               Features
             </a>
             <a
-              href="#pricing"
+              href="/#pricing"
               className="block text-sm text-brand-gray hover:text-white"
               onClick={() => setMobileOpen(false)}
             >
               Pricing
             </a>
-            <a
-              href="#demo"
-              className="block px-4 py-2 rounded-lg bg-brand-teal text-brand-dark font-semibold text-sm text-center"
-              onClick={() => setMobileOpen(false)}
-            >
-              Try free
-            </a>
+            {isPro ? (
+              <a
+                href="/dashboard"
+                className="block px-4 py-2 rounded-lg bg-brand-teal text-brand-dark font-semibold text-sm text-center"
+                onClick={() => setMobileOpen(false)}
+              >
+                Dashboard
+              </a>
+            ) : (
+              <a
+                href="/#demo"
+                className="block px-4 py-2 rounded-lg bg-brand-teal text-brand-dark font-semibold text-sm text-center"
+                onClick={() => setMobileOpen(false)}
+              >
+                Try free
+              </a>
+            )}
           </div>
         )}
       </div>
