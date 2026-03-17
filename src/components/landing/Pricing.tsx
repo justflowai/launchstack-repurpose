@@ -217,7 +217,9 @@ export function Pricing() {
 
               <a
                 href={plan.ctaLink}
-                {...(plan.ctaLink.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                {...(plan.ctaLink.startsWith("http")
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
                 className={`mt-8 block text-center px-6 py-3 rounded-xl font-semibold transition-colors ${
                   plan.highlighted
                     ? "bg-brand-teal text-brand-dark hover:bg-brand-teal/90"
@@ -232,6 +234,15 @@ export function Pricing() {
 
         <p className="text-center mt-8 text-sm text-brand-gray/60">
           All prices in USD. Cancel anytime — one click, no games. Founding rate locked for life.
+        </p>
+
+        <p className="text-center mt-4">
+          <a
+            href="/pro-welcome"
+            className="text-sm text-brand-teal/70 hover:text-brand-teal transition-colors underline underline-offset-2"
+          >
+            Already paid? Activate your Pro account here
+          </a>
         </p>
       </div>
     </section>
