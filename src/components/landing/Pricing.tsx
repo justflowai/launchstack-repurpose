@@ -46,7 +46,7 @@ const plans = [
       "Priority processing",
     ],
     cta: "Lock in $14/mo forever",
-    ctaLink: "#demo",
+    ctaLink: "https://buy.stripe.com/test_9B67sN79v62ieCU3LQ5c400",
     highlighted: true,
   },
   {
@@ -64,7 +64,7 @@ const plans = [
       "Priority support",
     ],
     cta: "Lock in $39/mo forever",
-    ctaLink: "#demo",
+    ctaLink: "https://buy.stripe.com/test_00w7sNalH9eudyQ3LQ5c401",
     highlighted: false,
   },
 ]
@@ -217,6 +217,7 @@ export function Pricing() {
 
               <a
                 href={plan.ctaLink}
+                {...(plan.ctaLink.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className={`mt-8 block text-center px-6 py-3 rounded-xl font-semibold transition-colors ${
                   plan.highlighted
                     ? "bg-brand-teal text-brand-dark hover:bg-brand-teal/90"
