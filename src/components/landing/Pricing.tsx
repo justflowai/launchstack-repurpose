@@ -46,7 +46,7 @@ const plans = [
       "Priority processing",
     ],
     cta: "Lock in $14/mo forever",
-    ctaLink: "https://buy.stripe.com/test_9B67sN79v62ieCU3LQ5c400",
+    ctaLink: "https://buy.stripe.com/28E7sEaPH96w0vJgRQbsc00",
     highlighted: true,
   },
   {
@@ -64,7 +64,7 @@ const plans = [
       "Priority support",
     ],
     cta: "Lock in $39/mo forever",
-    ctaLink: "https://buy.stripe.com/test_00w7sNalH9eudyQ3LQ5c401",
+    ctaLink: "https://buy.stripe.com/00w28kcXP0A02DRfNMbsc01",
     highlighted: false,
   },
 ]
