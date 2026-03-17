@@ -18,7 +18,7 @@ export function UsageBar({ used, limit, planLabel = "Free" }: UsageBarProps) {
         </p>
         <p className="text-xs text-brand-gray">{planLabel} tier</p>
       </div>
-      <div className="w-24 h-2 bg-brand-dark rounded-full overflow-hidden">
+      <div className="w-20 sm:w-24 h-2 bg-brand-dark rounded-full overflow-hidden">
         <div
           className={`h-full rounded-full transition-all ${
             isNearLimit ? "bg-brand-amber" : "bg-brand-teal"
