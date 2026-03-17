@@ -144,7 +144,7 @@ export function Pricing() {
         {/* Founding member scarcity banner */}
         <FoundingSlotsCounter />
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {plans.map((plan) => (
             <div
               key={plan.name}
