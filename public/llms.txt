@@ -1,0 +1,59 @@
+# LaunchStack Repurpose
+> AI-powered content repurposing engine. Turn one piece of content into platform-native posts for TikTok, LinkedIn, X (Twitter), Instagram, Facebook, and email newsletters in 10 seconds.
+
+## What is LaunchStack Repurpose?
+LaunchStack Repurpose is an AI content repurposing tool that transforms any text content (blog posts, newsletters, YouTube transcripts, podcast transcripts) into platform-native social media posts. Unlike Repurpose.io which only pipes content between platforms, LaunchStack uses AI to actually rewrite and transform content for each platform's native format, tone, and audience expectations.
+
+## Key Features
+- **AI Repurposing**: Paste any text content and get platform-native posts for 6 platforms in 10 seconds
+- **Generate from Scratch**: Describe a topic and niche — AI creates original posts without needing source content
+- **A/B Variations**: Every platform gets 2 distinct content variations for testing
+- **6 Platforms**: TikTok/Reels, LinkedIn, X (Twitter), Instagram, Facebook, Email newsletters
+- **No Account Ban Risk**: Generates copy you post yourself — no third-party API auto-posting that triggers platform flags
+- **No Broken Workflows**: Unlike Repurpose.io, there are no workflow failures or disconnection issues
+
+## Pricing (USD)
+- **Free**: $0/month forever — 3 repurposes per day, 2 platforms, 1 variation per platform
+- **Pro**: $29/month ($14/month for founding members, locked forever) — 100 repurposes per day, all 6 platforms, A/B variations, generate from topic
+- **Agency**: $79/month ($39/month for founding members, locked forever) — 500 repurposes per day, 5 brand profiles, API access, custom tone settings
+
+## How It Compares
+| Feature | LaunchStack | Repurpose.io | OpusClip |
+|---------|-------------|--------------|----------|
+| AI-generated platform-native posts | Yes | No | No |
+| Generate from topic (no source needed) | Yes | No | No |
+| A/B variations per platform | Yes | No | No |
+| Free tier | Yes | No | Yes |
+| No workflow failures | Yes | No | No |
+| Zero risk of account bans | Yes | No | No |
+| Cancel anytime, one click | Yes | No | Yes |
+| Starting price | $0/mo | $35/mo | $0/mo |
+
+## FAQ
+Q: How is this different from Repurpose.io?
+A: Repurpose.io pipes content between platforms — it's automation without intelligence. LaunchStack uses AI to actually transform your content for each platform's native format, tone, and audience. We also generate content from scratch — something Repurpose.io can't do. And unlike Repurpose.io, there are no workflows that break or connections that randomly disconnect.
+
+Q: Will this get my social media accounts banned?
+A: No. Unlike tools that auto-post via third-party APIs (which platforms flag as 'automatic behavior'), LaunchStack generates platform-native copy that you post yourself. You keep full control of your accounts. Zero risk of suspension.
+
+Q: Does it actually sound human?
+A: Yes. Each platform has custom tone and format rules built into the AI. A LinkedIn post reads like a professional insight, a TikTok caption reads like a creator sharing a tip. No robotic rewrites — real platform-native transformation.
+
+Q: Can I actually cancel, or will you make it difficult?
+A: One click. No calls, no guilt trips, no 3 rounds of support chat. Cancel from your dashboard instantly. We don't retain your payment info after cancellation.
+
+Q: Can I try it before paying?
+A: Absolutely. The free tier gives you 3 repurposes per day with 2 platforms — no credit card, no signup required.
+
+Q: What kind of content can I repurpose?
+A: Anything text-based: blog posts, newsletter editions, YouTube transcripts, podcast transcripts, long tweets, product descriptions, press releases. Video transcription is coming Q2 2026.
+
+Q: What platforms do you support?
+A: TikTok/Reels, LinkedIn, X (Twitter), Instagram, Facebook, and Email newsletters. More platforms coming based on user requests.
+
+Q: Can I use this for clients?
+A: Yes. The Agency plan ($79/mo, or $39/mo for founding members) lets you manage 5 brand profiles with custom tone settings — perfect for freelancers and agencies managing multiple clients.
+
+## Contact
+- Website: https://launchstack-repurpose.vercel.app
+- Email: support@launchstack.ai
