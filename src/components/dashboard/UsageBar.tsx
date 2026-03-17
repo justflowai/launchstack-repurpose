@@ -3,9 +3,10 @@
 interface UsageBarProps {
   used: number
   limit: number
+  planLabel?: string
 }
 
-export function UsageBar({ used, limit }: UsageBarProps) {
+export function UsageBar({ used, limit, planLabel = "Free" }: UsageBarProps) {
   const percentage = Math.min((used / limit) * 100, 100)
   const isNearLimit = percentage >= 80
 
@@ -15,7 +16,7 @@ export function UsageBar({ used, limit }: UsageBarProps) {
         <p className="text-sm text-white font-medium">
           {used}/{limit} today
         </p>
-        <p className="text-xs text-brand-gray">Free tier</p>
+        <p className="text-xs text-brand-gray">{planLabel} tier</p>
       </div>
       <div className="w-24 h-2 bg-brand-dark rounded-full overflow-hidden">
         <div
