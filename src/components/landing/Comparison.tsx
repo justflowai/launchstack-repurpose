@@ -100,16 +100,16 @@ export function Comparison() {
           <table className="w-full text-left">
             <thead>
               <tr className="border-b border-white/10">
-                <th className="px-6 py-4 text-sm font-medium text-brand-gray">
+                <th className="px-3 sm:px-6 py-3 sm:py-4 text-sm font-medium text-brand-gray">
                   Feature
                 </th>
-                <th className="px-6 py-4 text-sm font-bold text-brand-teal text-center">
+                <th className="px-3 sm:px-6 py-3 sm:py-4 text-sm font-bold text-brand-teal text-center">
                   LaunchStack
                 </th>
-                <th className="px-6 py-4 text-sm font-medium text-brand-gray text-center">
+                <th className="px-3 sm:px-6 py-3 sm:py-4 text-sm font-medium text-brand-gray text-center">
                   Repurpose.io
                 </th>
-                <th className="px-6 py-4 text-sm font-medium text-brand-gray text-center">
+                <th className="px-3 sm:px-6 py-3 sm:py-4 text-sm font-medium text-brand-gray text-center">
                   OpusClip
                 </th>
               </tr>
@@ -122,20 +122,20 @@ export function Comparison() {
                     i < rows.length - 1 ? "border-b border-white/5" : ""
                   }
                 >
-                  <td className="px-6 py-4 text-sm text-white/80">
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-sm text-white/80">
                     {row.feature}
                   </td>
-                  <td className="px-6 py-4 text-center">
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center">
                     <div className="flex justify-center">
                       <CellIcon value={row.us} />
                     </div>
                   </td>
-                  <td className="px-6 py-4 text-center">
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center">
                     <div className="flex justify-center">
                       <CellIcon value={row.repurpose} />
                     </div>
                   </td>
-                  <td className="px-6 py-4 text-center">
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center">
                     <div className="flex justify-center">
                       <CellIcon value={row.opus} />
                     </div>
