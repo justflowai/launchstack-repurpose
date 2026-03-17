@@ -7,7 +7,7 @@ export function Hero() {
     <section className="relative pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
       {/* Gradient background effect */}
       <div className="absolute inset-0 bg-gradient-to-b from-brand-deep/20 via-transparent to-transparent pointer-events-none" />
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-teal/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[300px] sm:w-[450px] md:w-[600px] h-[300px] sm:h-[450px] md:h-[600px] bg-brand-teal/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto text-center">
         {/* Badge — founding urgency (no fake social proof) */}
@@ -55,11 +55,11 @@ export function Hero() {
         </p>
 
         {/* Platform logos row */}
-        <div className="mt-12 flex items-center justify-center gap-8 opacity-40">
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 opacity-40">
           <span className="text-xs uppercase tracking-widest text-brand-gray">
             Works with
           </span>
-          <div className="flex items-center gap-6 text-brand-gray text-sm font-medium">
+          <div className="flex items-center gap-4 sm:gap-6 text-brand-gray text-sm font-medium">
             <span>TikTok</span>
             <span>LinkedIn</span>
             <span>X</span>
